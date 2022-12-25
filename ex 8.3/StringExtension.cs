@@ -7,9 +7,8 @@
             bool result = true;
             char[] chars1 = word1.ToCharArray();
             char[] chars2 = word2.ToCharArray();
-            AlphabetIndexComparer comparer = new();
-            chars1.Sort(comparer);
-            chars2.Sort(comparer);
+            Array.Sort(chars1);
+            Array.Sort(chars2);
             if (chars1.Length != chars2.Length)
                 return false;
             else
